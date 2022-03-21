@@ -1,0 +1,319 @@
+/* &display=swap */
+@import "null.css";
+/* ================================================================ */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+/* ================================================================ */
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.background {
+	margin: 30px;	
+	max-width: 100%;
+	min-height: 800px;
+	border: 1px solid black;
+	background-color: #869d4c;
+	border-radius: 10px;
+	position: relative;
+}
+
+.shadow {
+	margin: 0 auto;
+	max-width: 800px;
+	min-height: 100px;
+	background-color: #67853e;
+	border-radius: 50%;
+	position: relative;
+	top: 670px;
+	right: 60px;
+}
+
+.small-wheel {
+	border-radius:50%;
+	width: 180px;
+	height: 180px;
+	background-color: #4b4b4d;
+	outline: 10px dashed #4b4b4d;
+	transform: translate(85%, 248%);
+	box-shadow: 0 5px 5px #000;
+	position: relative;
+	z-index: 111;
+}		
+
+.disk-small {
+	background-color: #e3e2e4;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 2px solid #000;
+	transform: translate(40%, 40%);
+}
+
+.screws {
+	width: 20px;
+	height: 20px;
+	transform: scale(2.4) translate(26%, 24%);
+	outline: 6px dotted #000;
+	border-radius: 50%;
+}
+
+.black-circle {
+	width: 45px;
+	height: 45px;
+	background-color: #000;
+	border-radius: 50%;
+	transform: translate(55%, 55%);
+}
+
+
+.big-wheel {
+	border-radius:50%;
+	width: 180px;
+	height: 180px;
+	background-color: #4b4b4d;
+	outline: 10px dashed #4b4b4d;
+	transform: translate(85%, 248%);
+	box-shadow: 0 5px 5px #000;
+	transform: translate(350%,123%) scale(1.5);
+	position: relative;
+	z-index: 111;
+}
+
+.disk-big {
+	background-color: #e3e2e4;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 2px solid #000;
+	transform: translate(40%, 40%);
+}
+
+.screws_big {
+	outline: 4px dotted black;
+}
+
+.big-side {
+	width: 373px;
+	height: 373px;
+	margin: 25px 0 0 0;
+	border-radius: 50%;
+	box-shadow: 30px 30px 0 0 rgb(45 165 245);
+	transform: rotate(229deg) skew(8deg, 3deg);
+	position: absolute;
+	top: 460px;
+	right: 227px;
+	overflow: hidden;
+	z-index: 120;
+
+}
+
+.big-side::before {
+	content: "";
+	width: 50px;
+	height: 50px;
+	background-color: transparent;
+	display: inline-block;
+	position: absolute;
+	bottom: 257px;
+	right: 0px;
+	transform: rotate(313deg);
+}
+
+.small-side {
+	width: 185px;
+	height: 213px;
+	box-shadow: 31px 10px 0 0 rgb(45, 165, 245);
+	border-radius: 46%;
+	transform: rotate(278deg);
+	position: absolute;
+	bottom: 100px;
+	left: 143px;
+	z-index: 113;
+}
+
+.tractor-body {
+	width: 240px;
+	height: 160px;
+	background-color: #f41a0c;
+	outline: 3px solid #000;
+	border-radius: 6% 64% 0% 100% / 100% 0% 100% 0%;
+	position: absolute;
+	bottom: 230px;
+	left: 207px;
+	z-index: 3;
+}
+
+.list {
+	transform: translate(110px, 70px);
+}
+
+.list-item {
+	width: 100px;
+	border-radius: 10px;
+	height: 7px;
+	background-color: #000;
+	margin-bottom: 5px;
+}
+
+.front-light {
+	width: 79px;
+	height: 50px;
+	background-color: #ede309;
+	border-radius: 20px;
+	position: absolute;
+	top: 473px;
+	left: 189px;
+}
+
+.light-block {
+	width: 30px;
+	height: 55px;
+	background-color: #8d8c96;
+	outline: 2px solid #000;
+	border-radius: 20px;
+	transform: translate(15px, -1px);
+}
+
+.tractor-body1 {
+	width: 240px;
+	height: 160px;
+	background-color: #f41a0c;
+	outline: 3px solid #000;
+	position: absolute;
+	bottom: 230px;
+	right: 448px;
+}
+
+.tractor-body1::before {
+	content: "";
+	width: 40px;
+	height: 8px;
+	border-radius: 20px;
+	background-color: #ccc;
+	outline: 2px solid #000;
+	display: block;
+	position: absolute;
+	top: 17px;
+	right: 97px;
+	z-index: 114;
+}
+
+.tractor-body1::after {
+	content: "";
+	width: 240px;
+	height: 3px;
+	background-color: #000;
+	display: block;
+	transform: translate(-89px, 140px);
+}
+
+.tractor-cabin {
+	width: 290px;
+	height: 265px;
+	background-color: #f41a0c;
+	border-radius: 18% 66% 0% 100% / 100% 2% 100% 0%;
+	transform: skew(-12deg);
+	position: relative;
+	bottom: 263px;
+	left: 455px;
+}
+
+.tractor-cabin::before {
+	content: "";
+	width: 3px;
+	height: 240px;
+	background-color: #000;
+	display: inline-block;
+	transform: translate(42px, 28px) skew(-10deg);
+}
+
+.tractor-cabin::after {
+	content: "";
+	width: 177px;
+	height: 3px;
+	background-color: #000;
+	display: inline-block;
+	transform: translate(60px, -209px);
+}
+
+.cabin-glass {
+	width: 160px;
+	height: 210px;
+	background-color: #a4defb;
+	border-radius: 5px;
+	outline: 3px solid #000;
+	position: absolute;
+	bottom: 403px;
+	right: 471px;
+	transform: skew(-19deg);
+}
+
+.cabin-glass::before {
+	content: "";
+	width: 60px;
+	height: 180px;
+	background-color: #d0eaf7;
+	display: block;
+	transform: translate(12px, 12px) ;	
+	border-radius: 46% 54% 0% 100% / 100% 0% 100% 0%;
+	overflow: hidden;
+}
+
+.cabin-glass::after {
+	content: "";
+	width: 3px;
+	height: 240px;
+	background-color: #000;
+	display: inline-block;
+	transform: translate(170px, -197px) skew(2deg);
+}
+
+.windshield {
+	width: 16px;
+	height: 200px;
+	background-color: #a4defb;
+	border-radius: 4px;
+	position: absolute;
+	top: 247px;
+	right: 652px;
+	transform: skew(-20deg);
+	outline: 3px solid #000;
+}
+
+.pipe {
+	width: 10px;
+	height: 130px;
+	outline: 3px solid #000;
+	background-color: #8c8d90;
+	position: relative;
+	bottom: 393px;
+	left: 310px;
+}
+
+.pipe::before {
+	content: "";
+	width: 10px;
+	height: 20px;
+	outline: 3px solid #000;
+	border-radius: 0px 2px 2px 0px;
+	background-color: #8c8d90;
+	display: inline-block;
+	position: absolute;
+	top: -23px;
+	left: -7px;
+	transform: skew(33deg);
+}
+
+.pipe::after {
+	content: "";
+	width: 25px;
+	height: 70px;
+	outline: 3px solid #000;
+	background-color: #8c8d90;
+	display: inline-block;
+	transform: translate(-7px,45px);
+}
